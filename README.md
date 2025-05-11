@@ -39,3 +39,5 @@ https://github.com/spbsupprt/DNS/blob/main/dns.yml
 
 
 ![image](https://github.com/user-attachments/assets/2b3cdb7a-5602-45d4-9ef3-bcd3440195e4)
+
+
