@@ -4,11 +4,10 @@
   become: yes
   tasks:
     - name: Install required packages
-      yum:
+      apt:
         name:
-          - bind
-          - bind-utils
-          - ntp
+          - bind9
+          - bind9-utils
         state: latest
         update_cache: yes
 
