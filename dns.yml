@@ -114,9 +114,9 @@
     - name: Copy rndc config file
       copy:
         src: templates/rndc.conf
-        dest: /home/vagrant/rndc.conf
-        owner: vagrant
-        group: vagrant
+        dest: /home/rndc.conf
+        owner: root
+        group: root
         mode: 0644
 
     - name: Configure MOTD
