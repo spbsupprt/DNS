@@ -27,3 +27,12 @@
 - клиент2 видит только dns.lab
 
   ---
+
+Дано:
+
+![image](https://github.com/user-attachments/assets/a40ea71b-8cb8-417e-b384-8de78b2dc097)
+
+
+Выполняем плейбук:
+
+https://github.com/spbsupprt/DNS/blob/main/dns.yml
