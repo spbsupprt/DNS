@@ -14,7 +14,7 @@
 
     - name: Copy zone transfer key
       copy:
-        src: named.zonetransfer.key
+        src: templates/named.zonetransfer.key
         dest: /etc/named.zonetransfer.key
         owner: root
         group: named
@@ -26,7 +26,7 @@
   tasks:
     - name: Copy master named.conf
       copy:
-        src: master-named.conf
+        src: templates/master-named.conf
         dest: /etc/named.conf
         owner: root
         group: named
@@ -48,7 +48,7 @@
 
     - name: Configure resolv.conf for servers
       template:
-        src: servers-resolv.conf.j2
+        src: templates/servers-resolv.conf.j2
         dest: /etc/resolv.conf
         owner: root
         group: root
@@ -73,7 +73,7 @@
   tasks:
     - name: Copy slave named.conf
       copy:
-        src: slave-named.conf
+        src: templates/slave-named.conf
         dest: /etc/named.conf
         owner: root
         group: named
@@ -81,7 +81,7 @@
 
     - name: Configure resolv.conf for servers
       template:
-        src: servers-resolv.conf.j2
+        src: templates/servers-resolv.conf.j2
         dest: /etc/resolv.conf
         owner: root
         group: root
@@ -106,7 +106,7 @@
   tasks:
     - name: Configure resolv.conf for clients
       copy:
-        src: client-resolv.conf
+        src: templates/client-resolv.conf
         dest: /etc/resolv.conf
         owner: root
         group: root
@@ -114,7 +114,7 @@
 
     - name: Copy rndc config file
       copy:
-        src: rndc.conf
+        src: templates/rndc.conf
         dest: /home/vagrant/rndc.conf
         owner: vagrant
         group: vagrant
@@ -122,7 +122,7 @@
 
     - name: Configure MOTD
       copy:
-        src: client-motd
+        src: templates/client-motd
         dest: /etc/motd
         owner: root
         group: root
